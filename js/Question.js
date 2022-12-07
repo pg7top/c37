@@ -1,7 +1,7 @@
 class Question {
 
   constructor() {
-    this.title = createElement('h1')
+    this.title = createElement('h3')
     this.input1 = createInput("Enter Your Name Here....");
     this.input2 = createInput("Enter Correct Option No..");
     this.button = createButton('Submit');
@@ -25,9 +25,9 @@ class Question {
     this.title.html("Meu Questionário");
     this.title.position(350, 0);
 //depure a sintaxe abaixo para exibir a pergunta
-     this.html("Pergunta:- O que é que está no meio do começo, no começo do meio, e no final do fim? " );
+     this.title.html("Pergunta:- O que é que está no meio do começo, no começo do meio, e no final do fim? " );
     
-    this.question.position(150, 80);
+    this.question.position(120, 80);
     this.option1.html("1: A letra E" );
     this.option1.position(150, 100);
     this.option2.html("2: A letra I" );
@@ -45,7 +45,7 @@ class Question {
       
    
 //corrija o sintaxe abaixo para exibir a mensagem de agradecimento e a posição 
-      this.Message.html("Obrigado, Sua Resposta Foi Enviada");
+      this.message.html("Obrigado, Sua Resposta Foi Enviada");
       this.message.position();
 
       
